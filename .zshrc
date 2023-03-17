@@ -50,7 +50,7 @@ gobeatly() {
 # påmind
 gopamind() {
   ttab -d ~/www/pamind/backend/Pamind.WebApi dotnet run
-  www pamind/webclients/kundwebb && yarn && yarn start
+  www pamind/webclients/kundwebb && nvm use 16 && yarn && yarn start
 }
 
 # helicon
