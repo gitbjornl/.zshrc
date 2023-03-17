@@ -30,6 +30,13 @@ gt() {
   fi
 }
 
+# ssh
+switchssh() {
+  cd ~/.ssh && mkdir t && mv id_rsa t && mv id_rsa.pub t
+  mv ./swap/id_rsa ./ && mv ./swap/id_rsa.pub ./ && rm -rf swap
+  mv t swap && cd ~/www && ls
+}
+
 # repos
 www() {
   cd $HOME/www/$1 ; ls
@@ -49,4 +56,9 @@ gopamind() {
 # helicon
 gohelicon() {
   www helicon
+}
+
+gohell() {
+  ttab -d ~/www/hell/frontend "npm run dev"
+  cd $HOME/www/hell/backend ; bash start.sh
 }
