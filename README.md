@@ -23,7 +23,7 @@ brew install git
 
 Make sure you have the prerequisites in place and then run the following command:
 ```bash
-ln -s ~/<gitrepo>/.zshrc ~/.zshrc
+ln -s ~/<gitrepo>/zshrc ~/.zshrc
 ```
 
 This makes `.zshrc` from the repo load when the terminal opens.
