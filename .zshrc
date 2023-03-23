@@ -47,15 +47,9 @@ gobeatly() {
   www beatly/beatly-app && pnpm install && pnpm dev
 }
 
-# påmind
-gopamind() {
-  ttab -d ~/www/pamind/backend/Pamind.WebApi dotnet run
-  www pamind/webclients/kundwebb && nvm use 16 && yarn && yarn start
-}
-
 # helicon
-gohelicon() {
-  www helicon
+goatlas() {
+  www atlas && npm install && npm run start
 }
 
 gohell() {
