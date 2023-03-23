@@ -44,7 +44,7 @@ www() {
 
 # beatly
 gobeatly() {
-  www beatly/beatly-app && pnpm install && pnpm dev
+  www beatly && pnpm install && pnpm dev
 }
 
 # helicon
